@@ -1,0 +1,16 @@
+.dash {
+	display: flex;
+	flex-wrap: wrap;
+	.cell {
+		flex-grow: 1;
+		width: calc(50% - 40px);
+		height: calc(50% - 40px);
+		.pin {
+			margin: 0;
+			transform: scale(0.5);
+			transform-origin: 0 0;
+			width: calc(200% - 20px);
+			height: calc(200% - 20px);
+		}
+	}
+}

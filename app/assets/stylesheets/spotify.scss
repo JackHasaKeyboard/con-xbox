@@ -1,0 +1,63 @@
+#spotify {
+	display: flex;
+	flex-direction: column;
+	> .head {
+		display: flex;
+		input {
+			margin-left: auto;
+			background: #111;
+			border: 0;
+			padding: 2px;
+			text-indent: 4px;
+			color: #fff;
+		}
+	}
+	> .body {
+		display: flex;
+		padding: 10px;
+		#bar {
+			img {
+				height: 260px;
+			}
+		}
+		#tracks {
+			flex-grow: 1;
+			overflow-y: auto;
+			height: 260px;
+			h4, li {
+				padding: 10px;
+			}
+			h4 {
+				color: #6AE368;
+			}
+			li {
+				font-size: 12px;
+				&.active {
+					color: #6AE368;
+				}
+			}
+		}
+	}
+	#ctrl {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		#timeLine {
+			background: #fff;
+			#current {
+				background: #6AE368;
+				width: 28%;
+				height: 4px;
+			}
+			height: 4px;
+			margin-top: 10px;
+			flex-grow: 1;
+		}
+		> * {
+			margin: 6px;
+		}
+		span {
+			font-size: 10px;
+		}
+	}
+}

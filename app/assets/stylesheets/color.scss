@@ -1,0 +1,20 @@
+// Place all the styles related to the color controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#colors {
+	> .body  {
+		display: flex;
+		flex-wrap: wrap;
+		.pin.color {
+			width: 300px;
+			height: 300px;
+			.dash {
+				transform: scale(0.5);
+				transform-origin: 0 0;
+				width: 600px;
+				height: 600px;
+			}
+		}
+	}
+}

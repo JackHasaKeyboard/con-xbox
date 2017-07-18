@@ -1,0 +1,23 @@
+.pin#colors
+  .head
+    %h3 Colors
+
+  - i = 0
+  
+  .body
+    - @colors.each do |key, value|
+      - i += 1
+
+      .pin.color
+        = render('layouts/dash')
+
+        :scss
+          .pin.color:nth-child(#{i}) {
+            background: #{value[:primary]};
+            .dash > div {
+              background: #{value[:secondary]};
+              color: #{value[:tertiary]};
+              margin: 10px;
+              padding: 10px;
+            }
+          }

@@ -1,0 +1,16 @@
+#gamercard {
+	.head {
+		display: flex;
+		div {
+			padding: 10px;
+			img {
+				height: 100px;
+			}
+		}
+	}
+	.body {
+		#friends {
+			padding: 0;
+		}
+	}
+}
