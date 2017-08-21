@@ -6,7 +6,7 @@
 			.body {
 				display: flex;
 				flex-wrap: wrap;
-				div {
+				a {
 					width: 100px;
 					height: 100px;
 					display: flex;
@@ -25,7 +25,7 @@
 			flex-direction: column;
 			.body {
 				display: flex;
-				div {
+				a {
 					img {
 						width: 100px;
 						height: 100px;

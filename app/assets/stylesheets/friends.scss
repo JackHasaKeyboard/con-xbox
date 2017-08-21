@@ -1,10 +1,16 @@
 #friends {
 	.body {
-		display: flex;
-		div {
-			margin: 10px;
-			img {
-				height: 100px;
+		> div {
+			display: flex;
+			&.party {
+				background: grey;
+			}
+			div {
+				padding: 10px;
+				margin: 10px;
+				img {
+					height: 100px;
+				}
 			}
 		}
 	}

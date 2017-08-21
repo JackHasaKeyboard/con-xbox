@@ -3,9 +3,9 @@
     %h3 Colors
 
   - i = 0
-  
+
   .body
-    - @colors.each do |key, value|
+    - @colors.each do |key, val|
       - i += 1
 
       .pin.color
@@ -13,11 +13,13 @@
 
         :scss
           .pin.color:nth-child(#{i}) {
-            background: #{value[:primary]};
-            .dash > div {
-              background: #{value[:secondary]};
-              color: #{value[:tertiary]};
-              margin: 10px;
-              padding: 10px;
+            background: #{val[:primary]};
+            .dash {
+              .cell {
+                .pin {
+                  background: #{val[:secondary]};
+                  color: #{val[:tertiary]};
+                }
+              }
             }
           }

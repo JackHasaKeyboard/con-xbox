@@ -13,4 +13,9 @@
 			padding: 0;
 		}
 	}
+	.attr {
+		> * {
+			padding: 10px;
+		}
+	}
 }

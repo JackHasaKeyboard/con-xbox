@@ -9,8 +9,11 @@
 
       .body
         - @apps[:apps].each do |name, color|
-          %div{:style => "background: #{color}"}
-            = image_tag("apps/#{name.downcase}.svg")
+          .item
+            %a{:href => name.downcase, :style => "background: #{color}"}
+              = image_tag("apps/#{name.downcase}.svg")
+
+            %h4= name
 
     #games
       .head
@@ -18,5 +21,5 @@
 
       .body
         - @apps[:games].each do |name|
-          %div
+          %a{:href => name.downcase}
             = image_tag("apps/#{name.downcase}.png")

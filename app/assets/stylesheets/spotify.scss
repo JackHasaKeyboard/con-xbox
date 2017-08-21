@@ -15,6 +15,7 @@
 	> .body {
 		display: flex;
 		padding: 10px;
+		flex-grow: 1;
 		#bar {
 			img {
 				height: 260px;
@@ -23,7 +24,6 @@
 		#tracks {
 			flex-grow: 1;
 			overflow-y: auto;
-			height: 260px;
 			h4, li {
 				padding: 10px;
 			}
