@@ -1,0 +1,34 @@
+<?xml
+version="1.0"
+encoding="utf-8"
+?>
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	version="1.2"
+	baseProfile="tiny"
+	id="box"
+	viewBox="0 0 177.591 43.966"
+	xml:space="preserve"
+	height="100"
+	width="100"
+	style="
+	transform: rotateX(27deg) scale(0.6);
+	fill: #5dc21e;
+	"
+	viewport-fill="#000"
+	>
+	<path
+		d="
+		M 0,0
+		L 50,37
+		L 100,0
+		L 63,50
+		L 100,100
+		L 50,63
+		L 0,100
+		L 37,50
+		Z
+		"
+		>
+	</path>
+</svg>
