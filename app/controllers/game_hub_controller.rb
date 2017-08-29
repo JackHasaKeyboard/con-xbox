@@ -1,0 +1,2 @@
+class GameHubController < ApplicationController
+end

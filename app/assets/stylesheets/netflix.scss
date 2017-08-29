@@ -1,11 +1,53 @@
+$prim: #B9090B;
+
+@import "global/brand";
+
 #netflix {
 	> .body {
-		#disp {
+		.body {
 			display: flex;
-			padding: 10px;
-			img {
-				margin: 10px;
-				height: 260px;
+			#poster {
+				img {
+					margin: 10px;
+					height: 160px;
+				}
+			}
+			#theatre {
+				padding: 10px;
+				#vid {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					img {
+						height: 160px;
+					}
+					i {
+						position: absolute;
+						font-size: 16px;
+					}
+				}
+				#ctrl {
+					display: flex;
+					#prog {
+						height: 4px;
+						margin: 10px;
+						background: #000;
+						flex-grow: 1;
+						#cur {
+							background: $prim;
+							height: 4px;
+							width: calc((100% / 8854) * 662);
+						}
+					}
+				}
+			}
+			#info {
+				#rottenTomatoes {
+					color: map-get($rottenTomatoes, fresh);
+				}
+				#metacritic {
+					color: map-get($metacritic, green);
+				}
 			}
 		}
 	}

@@ -1,0 +1,52 @@
+* {
+	font-family: Roboto;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+html, body {
+	margin: 0;
+}
+
+// theme
+body {
+	background: #111;
+	color: #fff;
+	.pin {
+		background: #333;
+	}
+}
+
+.cell {
+	margin: 10px;
+}
+
+.pin {
+	padding: 10px;
+	background: red;
+	.head, .body {
+		padding: 10px;
+	}
+	.head {
+		h3 {
+			padding: 10px;
+		}
+	}
+	.body {
+		.item {
+			h4 {
+				padding: 10px;
+			}
+		}
+	}
+}

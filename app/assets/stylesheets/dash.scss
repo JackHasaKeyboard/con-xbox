@@ -1,15 +1,15 @@
 .dash {
-	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	.cell {
-		width: 50%;
-		height: 50%;
+		width: calc(1920px / 4 - 40px);
+		height: calc(1080px / 4 - 40px);
 		.pin {
-			height: calc(200% - 60px);
-			width: calc(200% - 60px);
+			width: calc(1920px / 2 - 100px);
+			height: calc(1080px / 2 - 100px);
 			transform: scale(0.5);
 			transform-origin: 0 0;
+			overflow: hidden;
 		}
 	}
 }

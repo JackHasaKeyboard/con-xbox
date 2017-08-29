@@ -3,6 +3,9 @@
 	flex-direction: column;
 	> .head {
 		display: flex;
+		img {
+			height: 26px;
+		}
 		input {
 			margin-left: auto;
 			background: #111;
@@ -17,13 +20,15 @@
 		padding: 10px;
 		flex-grow: 1;
 		#bar {
+			padding: 10px;
 			img {
-				height: 260px;
+				height: 200px;
 			}
 		}
 		#tracks {
+			height: 200px;
 			flex-grow: 1;
-			overflow-y: auto;
+			overflow-y: scroll;
 			h4, li {
 				padding: 10px;
 			}
@@ -38,26 +43,12 @@
 			}
 		}
 	}
-	#ctrl {
-		padding: 10px;
+	#album {
 		display: flex;
-		align-items: center;
-		#timeLine {
-			background: #fff;
-			#current {
-				background: #6AE368;
-				width: 28%;
-				height: 4px;
-			}
-			height: 4px;
-			margin-top: 10px;
-			flex-grow: 1;
-		}
-		> * {
-			margin: 6px;
-		}
-		span {
-			font-size: 10px;
+		padding: 10px;
+		img {
+			height: 60px;
+			margin: 10px;
 		}
 	}
 }

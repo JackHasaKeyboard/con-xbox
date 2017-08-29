@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  get 'espn/index'
-
-  get 'color/index'
-
   root 'home#index'
 
 	resources :color
+	resources :logo
+  resources :espn
+  resources :color
+  resources :netflix
+  resources :landing
+  resources :youtube
+  resources :game_hub
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

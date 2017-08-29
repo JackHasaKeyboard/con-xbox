@@ -1,0 +1,2 @@
+module GameHubHelper
+end

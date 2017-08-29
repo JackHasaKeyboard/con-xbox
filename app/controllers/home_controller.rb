@@ -11,7 +11,8 @@ class HomeController < ApplicationController
 			},
 			games: [
 				"Minecraft",
-				"Overwatch"
+				"Overwatch",
+				"Hg"
 			]
 		}
 	end

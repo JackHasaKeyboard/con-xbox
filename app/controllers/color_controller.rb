@@ -12,8 +12,8 @@ class ColorController < ApplicationController
 				tertiary: "#22ADC2"
 			},
 			"Burgundy": {
-				primary: "white",
-				secondary: "#800020",
+				primary: "#800020",
+				secondary: "grey",
 				tertiary: "white"
 			},
 			"Hot Dog Stand": {
@@ -42,7 +42,7 @@ class ColorController < ApplicationController
 				tertiary: "white"
 			},
 			"Walk in the Sun 2": {
-				primary: "light blue",
+				primary: "teal",
 				secondary: "pink",
 				tertiary: "orange"
 			},
@@ -91,6 +91,26 @@ class ColorController < ApplicationController
 				secondary: "blue",
 				tertiary: "yellow"
 			},
+			"Fallout 4": {
+				primary: "#161616",
+				secondary: "blue",
+				tertiary: "yellow"
+			},
+			"Synergy": {
+				primary: "#d3d3d3",
+				secondary: "lime",
+				tertiary: "grey"
+			},
+			"Slime, anyone?": {
+				primary: "purple",
+				secondary: "green",
+				tertiary: "#fff"
+			},
+			"000000": {
+				primary: "#000000",
+				secondary: "grey",
+				tertiary: "#fff"
+			}
 		}
 	end
 end

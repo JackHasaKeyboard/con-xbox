@@ -8,18 +8,37 @@
         Star Wars: The Force Awakens
 
     .body
-      #disp
+      #poster
         = image_tag('netflix/star_wars_the_force_awakens.png')
-        = image_tag('netflix/frame.png')
 
-      %div
-        %h5
-          Rotten Tomatoes:
-          %span 92%
+      #theatre
+        #vid
+          = image_tag('netflix/frame.png')
 
-        %h5
-          Metacritic
-          %span 81
+          = fa_icon "play"
 
-        %h5
-          %span 2015
+        #ctrl
+          %div
+            %span 0:11:02
+
+          #prog
+            #cur
+
+          %div
+            %span 2:16:32
+
+  #info
+    %h5
+      %span 2015
+
+    %h5#rottenTomatoes
+      Rotten Tomatoes:
+      %span 92%
+
+    %h5#metacritic
+      Metacritic
+      %span 81
+
+
+-#     .cat
+-#       = image_tag('netflix/futurama.png')

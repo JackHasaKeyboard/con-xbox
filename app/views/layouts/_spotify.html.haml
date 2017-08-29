@@ -1,7 +1,8 @@
 .pin#spotify
   .head
+    -# = image_tag('apps/spotify.svg')
     %h3 Spotify
-    -# %input{:type => ""}
+    %input{:type => ""}
 
   .body
     #bar
@@ -27,11 +28,18 @@
         %li A Song For Lenny	
         %li The Epic Last Song
 
+  #album
+    = image_tag('album/2.png')
+    = image_tag('album/3.png')
+    = image_tag('album/4.png')
+
   #ctrl
     %div
       %span 1:16
 
-    #timeLine
+    = fa_icon "pause"
+
+    #prog
       #current
 
     %div
