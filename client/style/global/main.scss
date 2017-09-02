@@ -1,0 +1,76 @@
+* {
+	font-family: Roboto;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+html, body {
+	margin: 0;
+}
+
+// theme
+body {
+	background: #111;
+	color: #fff;
+	padding: 10px;
+	.pin {
+		background: #333;
+	}
+}
+
+.cell {
+	margin: 10px;
+}
+
+.pin {
+	padding: 10px;
+	.head, .body {
+		padding: 10px;
+	}
+	.head {
+		h3 {
+			padding: 10px;
+		}
+	}
+	.body {
+		flex-grow: 1;
+		.item {
+			h4 {
+				padding: 10px;
+			}
+		}
+	}
+}
+
+#ctrl {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	#prog {
+		background: #fff;
+		#current {
+			background: #6AE368;
+			width: 28%;
+			height: 4px;
+		}
+		height: 4px;
+		margin-top: 10px;
+		flex-grow: 1;
+	}
+	> * {
+		margin: 6px;
+	}
+	span {
+		font-size: 10px;
+	}
+}

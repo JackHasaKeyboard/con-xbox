@@ -1,2 +1,0 @@
-class NetflixController < ApplicationController
-end
